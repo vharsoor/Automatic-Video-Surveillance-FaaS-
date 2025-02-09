@@ -1,0 +1,8 @@
+boto3
+ffmpeg
+ffmpeg-python
+opencv-python
+imutils
+facenet-pytorch
+Pillow
+torch
