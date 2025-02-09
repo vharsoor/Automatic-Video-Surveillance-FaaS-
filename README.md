@@ -1,4 +1,4 @@
-Complete cloud app will be a video analysis application that uses four Lambda functions to
+Cloud app will be a video analysis application that uses four Lambda functions to
 implement a multi-stage pipeline to process videos sent by users.
 1. The pipeline starts with a user uploading a video to the input bucket.
 2. Stage 1: The video-splitting function splits the video into frames and chunks them into
@@ -9,3 +9,9 @@ Shot MultiBox Detector (SSD) algorithm and uses only the frames that have faces 
 them for face recognition. It uses a pre-trained CNN model (ResNet-34) for face
 recognition and outputs the name of the extracted face. The final output is stored in the
 output bucket.
+
+The architecture of the cloud application is shown in Figure 1. I use AWS Lambda to
+implement the functions and AWS S3 to store the data required for the functions.
+
+
+![Project Diagram](Project%20Architecture.png)
